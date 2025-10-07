@@ -14,17 +14,15 @@
     <nav class="max-w-6xl mx-auto flex justify-between items-center p-4">
       <h1 class="text-2xl font-bold">📚 Book Explorer</h1>
       <ul class="hidden md:flex space-x-6">
-        <li><a href="#home" class="hover:hover:text-slate-300 hover:bg-slate-900 rounded-sm px-4 py-2 transition">Home</a></li>
-        <li><a href="#" class="hover:text-slate-300 hover:bg-slate-900 rounded-sm px-4 py-2 transition">Favorites</a></li>
+        <li><a href="#home" class="hover:text-slate-300 hover:bg-slate-900 rounded-sm px-4 py-2 transition">Home</a></li>
+        <li><a href="#favorites" class="hover:text-slate-300 hover:bg-slate-900 rounded-sm px-4 py-2 transition">Favorites</a></li>
         <li><a href="#about" class="hover:text-slate-300 hover:bg-slate-900 rounded-sm px-4 py-2 transition">About</a></li>
       </ul>
       <button class="md:hidden text-white hover:text-yellow-400">☰</button>
     </nav>
   </header>
 
-  <!-- Hero Section -->
   <section id="home" class="bg-white min-h-screen flex flex-col justify-center items-center text-center shadow-sm pt-20">
-    
     <div class="max-w-3xl mx-auto px-6">
       <h1 class="text-4xl font-bold mb-4 text-slate-700">
         Dive Into a World of Books
@@ -32,14 +30,22 @@
       <p class="max-w-xl mx-auto text-slate-500">
         From Timeless Classics to Modern Bestsellers — Discover Stories that Inspire, Teach and Entertain.
       </p>
-      <!-- Button now links to Popular Books -->
       <a href="#popular-books" class="inline-block mt-6 bg-slate-700 text-white px-6 py-2 rounded hover:bg-slate-600">Explore Collection</a>
     </div>
   </section>
-  
 
-  <section id="about" class="bg-slate-50 py-20 px-6 mt-6">
-    <div class="max-w-6xl mx-auto text-center">
+  <div id="favorites" class="bg-white min-h-screen flex flex-col justify-center items-center text-center py-20 px-6 pt-20">
+    <div class="max-w-6xl mx-auto">
+      <h2 class="text-4xl font-bold mb-6 text-slate-700">Your Favorites</h2>
+      <p class="text-slate-500 mb-10">Books you’ve added to your favorites will appear here once you start exploring.</p>
+      <div class="border-2 border-dashed border-slate-300 rounded-lg p-10">
+        <p class="text-slate-400 italic">No favorite books added yet. Start exploring to build your list!</p>
+      </div>
+    </div>
+  </div>
+
+  <section id="about" class="bg-slate-50 min-h-screen flex flex-col justify-center items-center text-center py-20 px-6 mt-6 pt-20">
+    <div class="max-w-6xl mx-auto">
       <h2 class="text-4xl font-bold mb-6 text-slate-700">About Book Explorer</h2>
       <p class="max-w-3xl mx-auto text-slate-500 text-lg mb-6">
         Book Explorer is your ultimate companion for discovering amazing books. Our mission is to help readers find timeless classics,
@@ -63,62 +69,64 @@
     </div>
   </section>
 
-  <section id="popular-books" class="max-w-6xl mx-auto py-20 px-4">
-    <h3 class="text-4xl font-bold mb-7 text-slate-700">Popular Books</h3>
+  <section id="popular-books" class="max-w-6xl mx-auto min-h-screen flex flex-col justify-center py-20 px-4 pt-20">
+    <h3 class="text-4xl font-bold mb-7 text-slate-700 text-center">Popular Books</h3>
     <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
-     
       <div class="bg-white p-4 rounded-lg shadow hover:shadow-md">
         <img src="one.jpg" alt="Book Title 4" class="h-40 w-full object-cover rounded mb-3" />
         <h4 class="text-lg font-bold">From Faith To Prosperity</h4>
         <p class="text-slate-500 text-sm">SAUL FLORES JR</p>
-        <button class=" bg-slate-700 text-white px-6 py-2 rounded hover:bg-slate-600">Add to Favorites</button>
+        <button class="bg-slate-700 text-white px-6 py-2 rounded hover:bg-slate-600">Add to Favorites</button>
       </div>
 
       <div class="bg-white p-4 rounded-lg shadow hover:shadow-md">
         <img src="three.jpg" alt="Book Title 4" class="h-40 w-full object-cover rounded mb-3" />
         <h4 class="text-lg font-bold">A Hope Of Glory</h4>
         <p class="text-slate-500 text-sm">JOHN W.ADAMS</p>
-        <button class=" bg-slate-700 text-white px-6 py-2 rounded hover:bg-slate-600">Add to Favorites</button>
+        <button class="bg-slate-700 text-white px-6 py-2 rounded hover:bg-slate-600">Add to Favorites</button>
       </div>
 
       <div class="bg-white p-4 rounded-lg shadow hover:shadow-md">
         <img src="four.png" alt="Book Title 4" class="h-40 w-full object-cover rounded mb-3" />
         <h4 class="text-lg font-bold">Just Pray</h4>
         <p class="text-slate-500 text-sm">KIMBERLY M.JAMES</p>
-        <button class=" bg-slate-700 text-white px-6 py-2 rounded hover:bg-slate-600">Add to Favorites</button>
+        <button class="bg-slate-700 text-white px-6 py-2 rounded hover:bg-slate-600">Add to Favorites</button>
       </div>
 
       <div class="bg-white p-4 rounded-lg shadow hover:shadow-md">
         <img src="two.png" alt="Book Title 4" class="h-40 w-full object-cover rounded mb-3" />
         <h4 class="text-lg font-bold">Where Are You God</h4>
         <p class="text-slate-500 text-sm">David Vestal</p>
-        <button class=" bg-slate-700 text-white px-6 py-2 rounded hover:bg-slate-600">Add to Favorites</button>
+        <button class="bg-slate-700 text-white px-6 py-2 rounded hover:bg-slate-600">Add to Favorites</button>
       </div>
+
       <div class="bg-white p-4 rounded-lg shadow hover:shadow-md">
         <img src="five.jpg" alt="Book Title 4" class="h-40 w-full object-cover rounded mb-3" />
         <h4 class="text-lg font-bold">Inward</h4>
         <p class="text-slate-500 text-sm">DR WAYNE FRAYNE</p>
-        <button class=" bg-slate-700 text-white px-6 py-2 rounded hover:bg-slate-600">Add to Favorites</button>
+        <button class="bg-slate-700 text-white px-6 py-2 rounded hover:bg-slate-600">Add to Favorites</button>
       </div>
+
       <div class="bg-white p-4 rounded-lg shadow hover:shadow-md">
         <img src="six.jpg" alt="Book Title 4" class="h-40 w-full object-cover rounded mb-3" />
         <h4 class="text-lg font-bold">The Anxiety Lie</h4>
         <p class="text-slate-500 text-sm">ANN LOUIS GRAHAM</p>
-        <button class=" bg-slate-700 text-white px-6 py-2 rounded hover:bg-slate-600">Add to Favorites</button>
+        <button class="bg-slate-700 text-white px-6 py-2 rounded hover:bg-slate-600">Add to Favorites</button>
       </div>
+
       <div class="bg-white p-4 rounded-lg shadow hover:shadow-md">
         <img src="seven.png" alt="Book Title 4" class="h-40 w-full object-cover rounded mb-3" />
         <h4 class="text-lg font-bold">Between Mountains</h4>
         <p class="text-slate-500 text-sm">DR TONY V.LEWIS</p>
-        <button class=" bg-slate-700 text-white px-6 py-2 rounded hover:bg-slate-600">Add to Favorites</button>
+        <button class="bg-slate-700 text-white px-6 py-2 rounded hover:bg-slate-600">Add to Favorites</button>
       </div>
+
       <div class="bg-white p-4 rounded-lg shadow hover:shadow-md">
         <img src="eight.png" alt="Book Title 4" class="h-40 w-full object-cover rounded mb-3" />
         <h4 class="text-lg font-bold">Turning Points</h4>
         <p class="text-slate-500 text-sm">SAUL FLORES JR</p>
-        <button class=" bg-slate-700 text-white px-6 py-2 rounded hover:bg-slate-600">Add to Favorites</button>
+        <button class="bg-slate-700 text-white px-6 py-2 rounded hover:bg-slate-600">Add to Favorites</button>
       </div>
-      
     </div>
   </section>
 
@@ -126,5 +134,4 @@
     <p>&copy; 2025 Daniella. All rights reserved.</p>
   </footer>
 </body>
-
 </html>
