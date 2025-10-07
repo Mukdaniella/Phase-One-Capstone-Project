@@ -2,49 +2,102 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>BOOK EXPLORER</title>
-    <script src="https://cdn.tailwindcss.com"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BOOK EXPLORER</title>
+  <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body class="bg-slate-100 font-sans">
-    <header class="bg-slate-700 text-white">
-        <nav class="max-w-6xl mx-auto flex justify-between items-center p-4">
-            <h1 class="text-2xl font-bold">📚 Book Explorer</h1>
-            <ul class="hidden md:flex space-x-6">
-                <li><a href="#" class="hover:text-slate-300">Home</a></li>
-                <li><a href="#" class="hover:text-slate-300">Categories</a></li>
-                <li><a href="#" class="hover:text-slate-300">About</a></li>
-                <li><a href="#" class="hover:text-slate-300">Contact</a></li>
-            </ul>
-            <button class="md:hidden text-white hover:text-yellow-400">
-                ☰
-            </button>
-        </nav>
-    </header>
 
-    <section class="bg-white py-16 text-center shadow-sm">
-  <div class="max-w-3xl mx-auto px-6">
-    <h1 class="text-4xl font-bold mb-4 text-slate-700">
-      Dive Into a World of Books
-    </h1>
-    <p class="max-w-xl mx-auto text-slate-500">
-      From Timeless Classics to Modern Bestsellers — Discover Stories that Inspire, Teach and Entertain.
-    </p>
-      <button class="mt-6 bg-slate-700 text-white px-6 py-2 rounded hover:bg-slate-600">
-        Explore Collection
+<body class="bg-slate-100 font-sans scroll-smooth">
+  <!-- Fixed Header -->
+  <header class="fixed bg-slate-700 text-white w-full z-50">
+    <nav class="max-w-6xl mx-auto flex justify-between items-center p-4">
+      <h1 class="text-2xl font-bold">📚 Book Explorer</h1>
+      <ul class="hidden md:flex space-x-6">
+        <li><a href="#" class="hover:text-slate-300">Home</a></li>
+        <li><a href="#" class="hover:text-slate-300">Categories</a></li>
+        <li><a href="#" class="hover:text-slate-300">About</a></li>
+        <li><a href="#" class="hover:text-slate-300">Contact</a></li>
+      </ul>
+      <button class="md:hidden text-white hover:text-yellow-400">
+        ☰
       </button>
-  </div>
-</section>
+    </nav>
+  </header>
 
+  <!-- Hero Section -->
+  <section class="bg-white min-h-screen flex flex-col justify-center items-center text-center shadow-sm pt-20">
+    <!-- Added min-h-screen + flex + justify-center -->
+    <div class="max-w-3xl mx-auto px-6">
+      <h1 class="text-4xl font-bold mb-4 text-slate-700">
+        Dive Into a World of Books
+      </h1>
+      <p class="max-w-xl mx-auto text-slate-500">
+        From Timeless Classics to Modern Bestsellers — Discover Stories that Inspire, Teach and Entertain.
+      </p>
+      <!-- Button now links to Popular Books -->
+      <a href="#popular-books" 
+         class="inline-block mt-6 bg-slate-700 text-white px-6 py-2 rounded hover:bg-slate-600">
+        Explore Collection
+      </a>
+    </div>
+  </section>
 
+  <!-- Popular Books Section -->
+  <main id="popular-books" class="max-w-6xl mx-auto py-20 px-4">
+    <h3 class="text-4xl font-bold mb-7 text-slate-700">Popular Books</h3>
+    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+     
+      <div class="bg-white p-4 rounded-lg shadow hover:shadow-md">
+        <img src="one.jpg" alt="Book Title 4" class="h-40 w-full object-cover rounded mb-3" />
+        <h4 class="text-lg font-bold">From Faith To Prosperity</h4>
+        <p class="text-slate-500 text-sm">SAUL FLORES JR</p>
+      </div>
 
+      <div class="bg-white p-4 rounded-lg shadow hover:shadow-md">
+        <img src="three.jpg" alt="Book Title 4" class="h-40 w-full object-cover rounded mb-3" />
+        <h4 class="text-lg font-bold">A Hope Of Glory</h4>
+        <p class="text-slate-500 text-sm">JOHN W.ADAMS</p>
+      </div>
 
+      <div class="bg-white p-4 rounded-lg shadow hover:shadow-md">
+        <img src="four.png" alt="Book Title 4" class="h-40 w-full object-cover rounded mb-3" />
+        <h4 class="text-lg font-bold">Just Pray</h4>
+        <p class="text-slate-500 text-sm">KIMBERLY M.JAMES</p>
+      </div>
 
+      <div class="bg-white p-4 rounded-lg shadow hover:shadow-md">
+        <img src="two.png" alt="Book Title 4" class="h-40 w-full object-cover rounded mb-3" />
+        <h4 class="text-lg font-bold">Where Are You God</h4>
+        <p class="text-slate-500 text-sm">David Vestal</p>
+      </div>
+      <div class="bg-white p-4 rounded-lg shadow hover:shadow-md">
+        <img src="five.jpg" alt="Book Title 4" class="h-40 w-full object-cover rounded mb-3" />
+        <h4 class="text-lg font-bold">Inward</h4>
+        <p class="text-slate-500 text-sm">DR WAYNE FRAYNE</p>
+      </div>
+      <div class="bg-white p-4 rounded-lg shadow hover:shadow-md">
+        <img src="six.jpg" alt="Book Title 4" class="h-40 w-full object-cover rounded mb-3" />
+        <h4 class="text-lg font-bold">The Anxiety Lie</h4>
+        <p class="text-slate-500 text-sm">ANN LOUIS GRAHAM</p>
+      </div>
+      <div class="bg-white p-4 rounded-lg shadow hover:shadow-md">
+        <img src="seven.png" alt="Book Title 4" class="h-40 w-full object-cover rounded mb-3" />
+        <h4 class="text-lg font-bold">Between Mountains</h4>
+        <p class="text-slate-500 text-sm">DR TONY V.LEWIS</p>
+      </div>
+      <div class="bg-white p-4 rounded-lg shadow hover:shadow-md">
+        <img src="eight.png" alt="Book Title 4" class="h-40 w-full object-cover rounded mb-3" />
+        <h4 class="text-lg font-bold">Turning Points</h4>
+        <p class="text-slate-500 text-sm">SAUL FLORES JR</p>
+      </div>
+      
+    </div>
+  </main>
 
-
-
-
+  <footer class="bg-slate-700 text-white text-center py-6 mt-12">
+    <p>&copy; 2025 Daniella. All rights reserved.</p>
+  </footer>
 </body>
 
 </html>
